@@ -1,0 +1,44 @@
+.main-div {
+    /* background-image: url(../../../assets/images/back.jpg); height: 100vh; width: 100vw; background-repeat: no-repeat; background-size: cover; */
+    background-image: linear-gradient(
+        to bottom right,
+        rgb(212, 163, 216),
+        rgb(50, 122, 194)
+    );
+    height: 100%;
+    margin-top: 0%;
+}
+.title {
+    text-align: center;
+    color: rgb(67, 67, 134);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+}
+mat-card {
+    height: 55%;
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+mat-form-field {
+    width: 100%;
+}
+button {
+    width: 30%;
+    left: 35%;
+    font-size: 18px; /* font-family: Georgia, 'Times New Roman', Times, serif; */
+}
+/* mat-toolbar {
+    border-radius: 2px;
+    font-size: 25px;
+} */
+.title-center {
+    margin: 0 auto;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+}
+.register {
+    text-align: center;
+}
