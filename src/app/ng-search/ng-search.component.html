@@ -1,37 +1,28 @@
 <!-- <hello name="{{ name }}"></hello> -->
-<!-- <p>
-  Start editing to see some magic happen :)
-</p>
-    <div>
-        <input type="text" [(ngModel)]="term" >
-        <div *ngFor = "let item of products | filter:term" >
-          <p>
-            {{item.brand}}
-          </p>
-          <div>
-              <img src={{item.images[0]}} width="200px"/>
-          </div>
-        </div>
- 
-    </div>  -->
-    <mat-card class="example-card container">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Shiba Inu</mat-card-title>
-          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-        <mat-card-content>
-          <p>
-            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-            bred for hunting.
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>LIKE</button>
-          <button mat-button>SHARE</button>
-        </mat-card-actions>
-      </mat-card>
-      
-      
+<div class="container">
+  <h2 class="py-4">Products List</h2>
+  <div class="form-group mb-4">
+    <input class="form-control" type="text" [(ngModel)]="term" placeholder="search here">
+  </div>
+  <div class="card-wrapper">
+  <mat-card *ngFor="let item of products | filter:term">
+    <mat-card-header>
+      <mat-card-title>{{item.title}}</mat-card-title>
+      <mat-card-subtitle>{{item.brand}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src={{item.images[0]}} alt="Photo of a Shiba Inu" width="200px">
+    <mat-card-content>
+      <p>
+        {{item.description}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <p>
+        {{item.price}}$
+      </p>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+</div>
