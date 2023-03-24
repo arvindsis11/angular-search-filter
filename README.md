@@ -25,3 +25,8 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Demo--using Ng2SearchPipe to filter:
+<img width="947" alt="image" src="https://user-images.githubusercontent.com/57572062/227458595-1a437567-918f-40de-b9d4-b4a39c824e63.png">
+<img width="905" alt="image" src="https://user-images.githubusercontent.com/57572062/227458695-f4ebaaf1-1029-4b51-a052-9432c4db3851.png">
+
