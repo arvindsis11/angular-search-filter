@@ -6,19 +6,19 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { Ng2SearchFilterComponent } from './ng2-search-filter/ng2-search-filter.component';
+import { NgSearchComponent } from './ng-search/ng-search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    Ng2SearchFilterComponent,
-   
+    NgSearchComponent 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    Ng2SearchPipeModule
+    Ng2SearchPipeModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
