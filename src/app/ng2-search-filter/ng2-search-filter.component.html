@@ -1,0 +1,13 @@
+<!-- <hel name="{{ name }}"></hello> -->
+<p>
+  Start editing to see some magic happen :)
+</p>
+    <div>
+        <input type="text" [(ngModel)]="term" >
+        <div *ngFor = "let item of products | filter:term" >
+          <p>
+            {{item.brand}}
+          </p>
+        </div>
+ 
+    </div> 
