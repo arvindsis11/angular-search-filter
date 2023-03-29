@@ -1,0 +1,30 @@
+<!-- <hello name="{{ name }}"></hello> -->
+<div class="container">
+    <h2 class="py-4">Products List</h2>
+    <span>--custom-search--filter</span>
+    <div class="form-group mb-4">
+      <input class="form-control" type="text" [(ngModel)]="term" placeholder="search here">
+    </div>
+    <div class="card-wrapper">
+    <mat-card *ngFor="let item of products | filter:term">
+      <mat-card-header>
+        <mat-card-title>{{item.title}}</mat-card-title>
+        <mat-card-subtitle>{{item.brand}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src={{item.images[0]}} alt="Photo of a Shiba Inu" width="200px">
+      <mat-card-content>
+        <p>
+          {{item.description}}
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <p>
+          {{item.price}}$
+        </p>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  </div>
+  

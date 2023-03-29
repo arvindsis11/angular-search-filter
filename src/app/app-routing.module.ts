@@ -4,11 +4,13 @@ import { LoginComponent } from './login/login.component';
 import { NgSearchComponent } from './ng-search/ng-search.component';
 import { SignupComponent } from './signup/signup.component';
 import { LogoutComponent } from './logout/logout.component';
+import { CustomSearchComponent } from './custom-search/custom-search.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'search', component: NgSearchComponent },
+  { path: 'custom-search', component: CustomSearchComponent },
   { path: 'logout', component: LogoutComponent },
   { path: '**', component: LoginComponent },
 ];

@@ -19,6 +19,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import { SignupComponent } from './signup/signup.component';
 import { LogoutComponent } from './logout/logout.component';
+import { CustomSearchComponent } from './custom-search/custom-search.component';
+// import { FilterPipe } from './custom-search/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { LogoutComponent } from './logout/logout.component';
     FooterComponent,
     LoginComponent,
     SignupComponent,
-    LogoutComponent 
+    LogoutComponent,
+    CustomSearchComponent,
+    // FilterPipe 
   ],
   imports: [
     BrowserModule,
